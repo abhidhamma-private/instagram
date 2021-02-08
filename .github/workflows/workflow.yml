@@ -29,11 +29,16 @@ jobs:
       - run:
           # 4. change your name
           git config --global user.name abhidhamma
+      - run:
           git status
       - run:
           # 5. change your repository
           git remote add origin https://cf56c3ceadb274c978d01e721111e3efa97529a1@github.com/abhidhamma/instagram.git
+      - run:
           git checkout -b gh-pages
+      - run:
           git add --all
+      - run:
           git commit -m "update"
+      - run:
           git push origin gh-pages -f
