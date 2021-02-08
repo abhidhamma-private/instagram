@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v1
       - uses: subosito/flutter-action@v1
         with:
-          channel: 'dev'
+          channel: 'beta'
       - run: flutter config --enable-web
       - run: flutter pub get
       - run: flutter build web --release
@@ -21,7 +21,7 @@ jobs:
         working-directory: ./instagram
       - run: |
           # 2. change path to [existed lib/main.dart path]/build/web
-          cd ./instagram/build/web
+          cd instagram/build/web
           git init
            # 3. change your email
           git config --global user.email abhidhamma91@gmail.com
