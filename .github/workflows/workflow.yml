@@ -18,15 +18,19 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
         # 1. change path which exist lib/main.dart
-      - run: |
+      - run:
           # 2. change path to [existed lib/main.dart path]/build/web
           cd build/web
+      - run:
           git init
-           # 3. change your email
+      - run:
+          # 3. change your email
           git config --global user.email abhidhamma91@gmail.com
+      - run:
           # 4. change your name
           git config --global user.name abhidhamma
           git status
+      - run:
           # 5. change your repository
           git remote add origin master
           git checkout -b gh-pages
