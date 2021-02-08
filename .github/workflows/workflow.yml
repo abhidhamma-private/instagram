@@ -32,7 +32,7 @@ jobs:
           git status
       - run:
           # 5. change your repository
-          git remote add origin https://cf56c3ceadb274c978d01e721111e3efa97529a1@github.com/Origogi/Vertical_Card_Pager.git
+          git remote add origin https://cf56c3ceadb274c978d01e721111e3efa97529a1@github.com/abhidhamma/instagram.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
