@@ -29,6 +29,7 @@ jobs:
           git status
           # 5. change your repository
           git remote add origin https://${{secrets.commit_secret}}@github.com/abhidhamma/instagram.git 
+          git config --global init.defaultBranch master
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
