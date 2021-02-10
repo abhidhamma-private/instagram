@@ -35,8 +35,4 @@ jobs:
           git add --all
       - run: |
           git commit -m "update"
-<<<<<<< HEAD
           git push origin gh-pages -f
-=======
-          git push origin gh-pages -f
->>>>>>> f2ab0f06a95d1857031f1b76d156d494b5144d94
