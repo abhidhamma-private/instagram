@@ -33,7 +33,6 @@ jobs:
           git checkout -b gh-pages
       - run:
           git add --all
-      - run:
+      - run: |
           git commit -m "update"
-      - run:
           git push origin gh-pages -f
