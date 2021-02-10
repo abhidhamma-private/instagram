@@ -18,20 +18,15 @@ jobs:
       - run: flutter pub get
       - run: flutter build web --release
         # 1. change path which exist lib/main.dart
-      - run:
+      - run: |
           # 2. change path to [existed lib/main.dart path]/build/web
           cd build/web
-      - run:
           git init
-      - run:
           # 3. change your email
           git config --global user.email abhidhamma91@gmail.com
-      - run:
           # 4. change your name
           git config --global user.name abhidhamma
-      - run:
           git status
-      - run:
           # 5. change your repository
           git remote add origin https://cf56c3ceadb274c978d01e721111e3efa97529a1@github.com/abhidhamma/instagram.git
       - run:
