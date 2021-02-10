@@ -34,5 +34,5 @@ jobs:
       - run:
           git add --all
       - run: |
-          git commit -m "update"
+          # git commit -m "update"
           git push origin gh-pages -f
