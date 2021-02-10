@@ -7,7 +7,7 @@ jobs:
   build:
     name: Build Web
     env:
-      my_secret: ${{secrets.GITHUB_TOKEN}}
+      my_secret: ${{secrets.COMMIT_TOKEN}}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -28,7 +28,7 @@ jobs:
           git config --global user.name abhidhamma
           git status
           # 5. change your repository
-          git remote add origin https://${{secrets.GITHUB_TOKEN}}@github.com/abhidhamma/instagram.git
+          git remote add origin https://${my_secret}@github.com/abhidhamma/instagram.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
