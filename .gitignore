@@ -14,6 +14,10 @@
 *.ipr
 *.iws
 .idea/
+<<<<<<< HEAD
+=======
+.git/
+>>>>>>> f2ab0f06a95d1857031f1b76d156d494b5144d94
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
