@@ -28,7 +28,7 @@ jobs:
           git config --global user.name abhidhamma
           git status
           # 5. change your repository
-          git remote add origin https://e52c80b9b63ce05257f479186a66bbfae17a46b8@github.com/abhidhamma/instagram.git
+          git remote add origin https://${{secrets.COMMIT_TOKEN}}@github.com/abhidhamma/instagram.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
